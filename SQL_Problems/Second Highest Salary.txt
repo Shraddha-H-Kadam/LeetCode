@@ -19,6 +19,6 @@ For example, given the above Employee table, the query should return 200 as the 
 
 Solution:
 
-SELECT Salary SecondHighestSalary
-From Employee
-order by Salary desc limit 1 offset 1;
+Select Max(Salary) SecondHighestSalary 
+From Employee 
+Where Salary < (Select Max(Salary) From Employee);
