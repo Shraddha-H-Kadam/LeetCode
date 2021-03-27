@@ -32,10 +32,10 @@ Explanation:
 Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.
 
 Solution:
-Select d.Name as Department, e.Name as Employee, Max(e.Salary)
+Select d.Name as Department, e.Name as Employee, e.Salary
 From Employee as e
-Right Join Department as d
-on d.Id= e.DepartmentId
-Group by DepartmentId
-Order by Salary desc;
+Join Department as d
+on e.DepartmentId=d.Id
+Where (e.DepartmentId, e.salary)in (Select DepartmentId, Max(salary) From Employee group by DepartmentId);
+
 
