@@ -1,0 +1,5 @@
+/* Solution
+*/
+
+Select floor(avg(population))
+From city;
