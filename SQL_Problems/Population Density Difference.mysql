@@ -1,0 +1,4 @@
+/* Solution */
+
+Select (Max(population) - Min(population))
+        From city;
