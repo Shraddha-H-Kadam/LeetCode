@@ -1,0 +1,7 @@
+/* Solution */
+
+Select round(Long_W,4)
+From Station
+where (lat_n)>38.7780
+order by lat_n 
+limit 1;
