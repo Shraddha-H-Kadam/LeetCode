@@ -1,0 +1,8 @@
+/* Solution */
+
+Select max(earnings), count(*) 
+From (Select salary*months as earnings
+     From Employee) as earn
+Group By earnings
+order by earnings desc
+limit 1;
