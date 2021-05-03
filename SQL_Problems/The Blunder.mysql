@@ -1,0 +1,5 @@
+/* Solution */
+
+Select ceil(Avg(salary) -  Avg(replace(salary,'0','')) )
+from employees; 
+        
