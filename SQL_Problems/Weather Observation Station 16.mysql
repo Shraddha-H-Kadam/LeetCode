@@ -1,0 +1,6 @@
+/*
+Solution*/
+
+Select round(Min(Lat_n),4)
+From station
+where Lat_n>38.7780;
