@@ -1,0 +1,5 @@
+/* Solution */
+
+Select Sum(population)
+From city
+Where countrycode like 'JPN';
