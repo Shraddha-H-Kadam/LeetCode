@@ -1,0 +1,5 @@
+/* Solution */
+
+Select Sum(Population)
+From City
+Where district like 'California';
