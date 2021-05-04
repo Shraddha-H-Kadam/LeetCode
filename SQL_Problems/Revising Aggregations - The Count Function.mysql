@@ -1,0 +1,5 @@
+/* Solution */
+
+Select count(*) 
+From city 
+where population>100000;
