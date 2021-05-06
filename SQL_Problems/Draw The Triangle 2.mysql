@@ -1,0 +1,5 @@
+/* Solution */
+
+Set @num =0;
+Select REPEAT('* ', @num := @num + 1)
+From information_schema.tables limit 20;
