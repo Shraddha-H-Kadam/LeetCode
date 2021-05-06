@@ -1,0 +1,7 @@
+/* Solution */
+
+Select (c.name)
+From city c
+Left join country co
+on co.code = c.countrycode
+where co.continent like 'Africa';
