@@ -1,0 +1,7 @@
+/* solution */
+
+Select Sum(c.population)
+From city c
+Left join country co
+on c.countrycode = co.code
+where co.continent like 'Asia';
