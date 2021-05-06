@@ -1,0 +1,7 @@
+/* Solution */
+
+Select co.continent, floor(Avg(c.population))
+From city c
+join country co
+On co.code = c.countrycode
+group by co.continent;
